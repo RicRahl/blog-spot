@@ -8,7 +8,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const app = express();
 
 //connect to mongoDB
-const dbURI = 'mongodb+srv://Richey14:Richey1989@ninja-cluster.rswgjzn.mongodb.net/ninja-data?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://username:password@ninja-cluster.rswgjzn.mongodb.net/ninja-data?retryWrites=true&w=majority'
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => app.listen(3000), console.log('connected...'))
